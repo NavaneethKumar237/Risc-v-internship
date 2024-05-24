@@ -44,6 +44,12 @@ $ ls -ltr sum1ton.o    (file is created)
 
 ![Screenshot from 2024-05-24 14-55-13](https://github.com/NavaneethKumar237/Risc-v-internship/assets/167600626/fb1494b4-57b8-4da9-89a7-3a415c79ad64)
 
+Opening the another tab of terminal to get list of instructions \
+and type the command \
+$ risc-v64-unknown-elf-objdump -d sum1ton.o \
+we will get the set of instructions
+
+
 
 
 
