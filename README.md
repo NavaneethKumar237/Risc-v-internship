@@ -53,6 +53,15 @@ we will get the set of instructions
  Now type / main and then type n
  we will get instructions of main
 
+now compling with another command \
+$ riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c \
+here is how it done
+![Screenshot from 2024-05-24 17-32-15](https://github.com/NavaneethKumar237/Risc-v-internship/assets/167600626/e5b5d98d-a778-46a7-a1a5-85d77ffd1a2c)
+
+for the both commands we get same output we can see the number of instructions in it \
+
+ 
+
 
 
 
