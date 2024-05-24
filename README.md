@@ -48,6 +48,8 @@ Opening the another tab of terminal to get list of instructions \
 and type the command \
 $ risc-v64-unknown-elf-objdump -d sum1ton.o \
 we will get the set of instructions
+![Screenshot from 2024-05-24 14-55-20](https://github.com/NavaneethKumar237/Risc-v-internship/assets/167600626/acbfca4e-4c2b-45b2-88ae-14b8aa464687)
+
 
 
 
