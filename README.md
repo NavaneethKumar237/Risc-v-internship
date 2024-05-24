@@ -20,5 +20,6 @@ $ gedit sum1ton.c
 
 we will get an interface page to write c program
 
-![Uploading Screenshot from 2024-05-24 14-59-13.png…]()
+![Screenshot from 2024-05-24 14-59-13](https://github.com/NavaneethKumar237/Risc-v-internship/assets/167600626/a7189e2e-6635-4e5e-8bab-f8978ce23981)
+
 
