@@ -14,4 +14,11 @@ install the virtual machie
 Now we are starting compiling with simple c program
 
 Type the following commands
-[c.c.txt](https://github.com/NavaneethKumar237/Risc-v-internship/files/15431780/c.c)
+
+$ cd
+$ gedit sum1ton.c
+
+we will get an interface page to write c program
+
+![Uploading Screenshot from 2024-05-24 14-59-13.png…]()
+
