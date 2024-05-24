@@ -33,14 +33,15 @@ we can see the output sum of 6 numbers is 21
 compiling same program with risc-v compiler
 -
 $ cat 1ton.c \
-that display the total program in the terminal \
+that display the total program in the terminal 
 
 ![Screenshot from 2024-05-24 16-00-04](https://github.com/NavaneethKumar237/Risc-v-internship/assets/167600626/e5f929ee-ba97-477f-a1a2-d1472797f3ec)
 
 
 next converting in to .o file \
-$ riscv64-unknown-elf-gcc -O1 -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c
+$ riscv64-unknown-elf-gcc -O1 -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c \
 $ ls -ltr sum1ton.o    (file is created)
+
 ![Screenshot from 2024-05-24 14-55-13](https://github.com/NavaneethKumar237/Risc-v-internship/assets/167600626/fb1494b4-57b8-4da9-89a7-3a415c79ad64)
 
 
