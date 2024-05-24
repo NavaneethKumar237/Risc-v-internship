@@ -51,7 +51,7 @@ we will get the set of instructions
 ![Screenshot from 2024-05-24 14-55-20](https://github.com/NavaneethKumar237/Risc-v-internship/assets/167600626/acbfca4e-4c2b-45b2-88ae-14b8aa464687)
 
  Now type / main and then type n
- we will get instructions of main
+ we will get instructions of main There are 11 number of instructions
 
  ![Screenshot from 2024-05-24 18-33-26](https://github.com/NavaneethKumar237/Risc-v-internship/assets/167600626/d195ebaa-6165-4f36-81fa-651e771ccec0)
 
@@ -65,6 +65,7 @@ and the out put we got 11 number of instructions
 
 ![Screenshot from 2024-05-24 18-38-27](https://github.com/NavaneethKumar237/Risc-v-internship/assets/167600626/1fda23bb-209b-4609-afb1-e8ede9d689db)
 
+ we can observe that in the both outputs we got 11 istructions......
  
 
  
