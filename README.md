@@ -74,6 +74,12 @@ and the output we got 11 number of instructions
 
 ![image](https://github.com/NavaneethKumar237/Risc-v-internship/assets/167600626/255a9251-0bbb-47e2-adb8-4bcc0abfca1b)
 
+The above shown the base instructions formates \
+
+Now Lets discuss about in detail 
+-
+
+
 
 
 
