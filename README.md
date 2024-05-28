@@ -82,6 +82,10 @@ RISC-V defines several instruction formats, including:
 
 R-type (Register): Used for arithmetic and logical operations.
 -
+These Instructions using 3 register inputs - add, xor, 
+
+![image](https://github.com/NavaneethKumar237/Risc-v-internship/assets/167600626/62d395ba-7f8f-40a8-bdf2-b63b71fc5f2d)
+
 Opcode: 7 bits \
 Rd: 5 bits (destination register) \
 Funct3: 3 bits \
@@ -91,6 +95,16 @@ Funct7: 7 bits
 
 I-type (Immediate): Used for immediate arithmetic, loads, etc.
 -
+The 12-bit signed immediate is added to the
+base address in register rs1 to form the
+memory address \
+This is very similar to the add-immediate
+operation but used to create address, not to
+create final result \
+• Value loaded from memory is stored in rd
+
+![image](https://github.com/NavaneethKumar237/Risc-v-internship/assets/167600626/2b29ca68-405e-454a-990b-e7585ebc11e0)
+
 Opcode: 7 bits \
 Rd: 5 bits (destination register) \
 Funct3: 3 bits \
@@ -99,6 +113,21 @@ Imm: 12 bits (immediate value)
 
 S-type (Store): Used for store instructions.
 -
+
+Store needs to read two registers, rs1 for base memory
+address, and rs2 for data to be stored, as well as need
+immediate offset! \
+• Can’t have both rs2 and immediate in same place as other
+instructions! \
+• Note: stores don’t write a value to the register file, no rd!
+• RISC-V design decision is move low 5 bits of immediate to
+where rd field was in other instructions – keep rs1/rs2
+fields in same place \
+• register names more critical than immediate bits in hardware
+design
+
+![image](https://github.com/NavaneethKumar237/Risc-v-internship/assets/167600626/62f788f6-ae3e-48d5-a42a-afdefb54e8e5)
+
 Opcode: 7 bits \
 Imm[4:0]: 5 bits (lower bits of immediate) \
 Funct3: 3 bits \
@@ -108,6 +137,18 @@ Imm[11:5]: 7 bits (upper bits of immediate)
 
 B-type (Branch): Used for branch instructions.
 -
+B-format is mostly same as S-Format, with two
+register sources (rs1/rs2) and a 12-bit
+immediate \
+• But now immediate represents values -212 to
++212-2 in 2-byte increments \
+• The 12 immediate bits encode even 13-bit
+signed byte offsets (lowest bit of offset is always
+zero, so no need to store it) 
+
+
+![image](https://github.com/NavaneethKumar237/Risc-v-internship/assets/167600626/88fd3257-892c-475c-9bb5-301984d8faec)
+
 Opcode: 7 bits \
 Imm[11]: 1 bit (most significant bit of immediate) \
 Imm[4:1]: 4 bits (lower bits of immediate) \
@@ -119,6 +160,16 @@ Imm[12]: 1 bit (most significant bit of immediate)
 
 U-type (Upper immediate): Used for instructions with a 20-bit immediate.
 -
+
+![image](https://github.com/NavaneethKumar237/Risc-v-internship/assets/167600626/98365856-040b-43d4-ab86-9ed69e008a4b)
+
+Has 20-bit immediate in upper 20 bits of
+32-bit instruction word \
+One destination register, rd \
+Used for two instructions \
+LUI – Load Upper Immediate \
+AUIPC – Add Upper Immediate to PC 
+
 Opcode: 7 bits \
 Rd: 5 bits (destination register) \
 Imm: 20 bits (immediate value)
@@ -132,7 +183,10 @@ Imm[11]: 1 bit (immediate bit 11) \
 Imm[10:1]: 10 bits (middle bits of immediate) \
 Imm[20]: 1 bit (most significant bit of immediate)
 
-Now let's discuss about in detail 
+
+![image](https://github.com/NavaneethKumar237/Risc-v-internship/assets/167600626/1d4c546a-3730-4830-b621-e64a6f3890cb)
+
+Now let's go through some examples.
 -
 ADD
 -
