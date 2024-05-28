@@ -86,7 +86,7 @@ The ADD instruction is an R-type (Register) instruction, which has the following
 ![image](https://github.com/NavaneethKumar237/Risc-v-internship/assets/167600626/c9b0647c-5bed-4931-ab5a-cf73677b748f)
 
 32-bit Instruction Code  \
-Now, let's put these fields together: \
+Now, let's put these fields together: 
 
 funct7: 0000000  \
 rs2: 00001     \
@@ -100,20 +100,55 @@ Putting it all together:  \
 0000000	00001	00010	000	00110	0110011   \
 In binary: 0000000 00001 00010 000 00110 0110011  \
 
-Convert this to hexadecimal for a more compact representation: \
+Convert this to hexadecimal for a more compact representation: 
 
 0000000 is 0x00    \ 
 00001 is 0x01 \
-00010 is 0x02\
-000 is 0x00\
-00110 is 0x06\
-0110011 is 0x33\
+00010 is 0x02 \
+000 is 0x00 \
+00110 is 0x06 \
+0110011 is 0x33 \
 Thus, the 32-bit binary instruction can be written as: 0x00200633
 
+The 32-bit instruction code for the RISC-V instruction ADD r6, r2, r1 is 0x00200633 in hexadecimal, corresponding to the R-type format as follows: 
+![image](https://github.com/NavaneethKumar237/Risc-v-internship/assets/167600626/ec1a18b2-5719-458e-91d2-04d3b60489cb)
 
+SUB
+-
+The R-type format in RISC-V is structured as follows:
+![image](https://github.com/NavaneethKumar237/Risc-v-internship/assets/167600626/309efc6b-f279-4392-bd32-7ed631917c17)
+opcode: The opcode for R-type arithmetic instructions is 0110011. \
+funct7: For the SUB instruction, funct7 is 0100000. \
+funct3: For the SUB instruction, funct3 is 000. \ 
+rd (destination register): r7 corresponds to 00011 in binary.\
+rs1 (source register 1): r1 corresponds to 00001 in binary. \
+rs2 (source register 2): r2 corresponds to 00010 in binary \
 
+Now, we combine all these fields into the 32-bit instruction format:
 
+![image](https://github.com/NavaneethKumar237/Risc-v-internship/assets/167600626/b571312d-5ba5-4b71-9619-a751735d5dc3)
 
+Converting each field to its binary representation:
+
+funct7: 0100000 (7 bits) \
+rs2: 00010 (5 bits) \ 
+rs1: 00001 (5 bits) \ 
+funct3: 000 (3 bits) \
+rd: 00111 (5 bits)  \
+opcode: 0110011 (7 bits) \
+
+Concatenating all these binary fields: \
+
+0100000 00010 00001 000 00111 0110011 \
+
+Finally, converting this binary string to hexadecimal: \
+
+Binary: 0100000 00010 00001 000 00111 0110011
+Hex: 0x400108B3 \
+
+The exact 32-bit instruction code for the SUB r7, r1, r2 instruction is: 0x400108B3
+
+This hexadecimal value represents the encoded instruction in RISC-V machine language according to the R-type format.
 
 
 
