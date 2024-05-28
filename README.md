@@ -69,7 +69,8 @@ and the output we got 11 number of instructions
 
  Task 2
  =
- 
+ Lets get in to Risc-v chip, and learn about different types of RISC-V Instruction types R,I,S,B,U,J.
+ -
 
  
 
