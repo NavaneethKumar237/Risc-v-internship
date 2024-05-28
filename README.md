@@ -82,6 +82,9 @@ ADD
 -
 This instruction allows add two registers together and save the result in the third one.\ For example: ADD x3, x1, x2. It means add together x1 and x2 and save the result in x3. \As each instruction consists of 32 bits.
 
+The ADD instruction is an R-type (Register) instruction, which has the following format:
+![image](https://github.com/NavaneethKumar237/Risc-v-internship/assets/167600626/c9b0647c-5bed-4931-ab5a-cf73677b748f)
+
 
 
 
