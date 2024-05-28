@@ -76,6 +76,62 @@ and the output we got 11 number of instructions
 
 The above shown the base instructions formates 
 
+RISC-V Instruction Types and Formats
+=
+RISC-V defines several instruction formats, including:
+
+R-type (Register): Used for arithmetic and logical operations.
+-
+Opcode: 7 bits \
+Rd: 5 bits (destination register) \
+Funct3: 3 bits \
+Rs1: 5 bits (source register 1) \
+Rs2: 5 bits (source register 2) \
+Funct7: 7 bits
+
+I-type (Immediate): Used for immediate arithmetic, loads, etc.
+-
+Opcode: 7 bits \
+Rd: 5 bits (destination register) \
+Funct3: 3 bits \
+Rs1: 5 bits (source register) \
+Imm: 12 bits (immediate value) 
+
+S-type (Store): Used for store instructions.
+-
+Opcode: 7 bits \
+Imm[4:0]: 5 bits (lower bits of immediate) \
+Funct3: 3 bits \
+Rs1: 5 bits (source register) \
+Rs2: 5 bits (source register 2) \
+Imm[11:5]: 7 bits (upper bits of immediate)
+
+B-type (Branch): Used for branch instructions.
+-
+Opcode: 7 bits \
+Imm[11]: 1 bit (most significant bit of immediate) \
+Imm[4:1]: 4 bits (lower bits of immediate) \
+Funct3: 3 bits \
+Rs1: 5 bits (source register 1) \
+Rs2: 5 bits (source register 2) \
+Imm[10:5]: 6 bits (upper bits of immediate) \
+Imm[12]: 1 bit (most significant bit of immediate) 
+
+U-type (Upper immediate): Used for instructions with a 20-bit immediate.
+-
+Opcode: 7 bits \
+Rd: 5 bits (destination register) \
+Imm: 20 bits (immediate value)
+
+J-type (Jump): Used for jump instructions.
+-
+Opcode: 7 bits \
+Rd: 5 bits (destination register) \
+Imm[19:12]: 8 bits (upper immediate) \
+Imm[11]: 1 bit (immediate bit 11) \
+Imm[10:1]: 10 bits (middle bits of immediate) \
+Imm[20]: 1 bit (most significant bit of immediate)
+
 Now let's discuss about in detail 
 -
 ADD
@@ -149,6 +205,57 @@ Hex: 0x400108B3
 The exact 32-bit instruction code for the SUB r7, r1, r2 instruction is: 0x400108B3
 
 This hexadecimal value represents the encoded instruction in RISC-V machine language according to the R-type format.
+
+
+AND
+-
+
+The RISC-V instruction set architecture (ISA) includes various instruction types, each defined by its own format. For your specific instruction, "AND r8, r1, r3," the format is R-type. Below, I'll break down the instruction and explain how to encode it in its 32-bit instruction code format.
+
+R-Type Instruction Format \
+R-type instructions are used for register-register operations and have the following fields:
+
+![image](https://github.com/NavaneethKumar237/Risc-v-internship/assets/167600626/05be8b21-27cc-4e4c-b271-97135eb24681)
+
+opcode: The opcode for R-type instructions (for AND) is 0110011. \
+rd: Destination register, r8 which corresponds to 01000.    \
+funct3: The function code for AND is 111.    \
+rs1: First source register, r1 which corresponds to 00001.  \
+rs2: Second source register, r3 which corresponds to 00011.  \
+funct7: The function code (7 bits) for AND is 0000000.  
+
+Encoding "AND r8, r1, r3" into 32-bit Instruction Code \
+Let's put the fields together:
+
+opcode: 0110011 (bit positions 0-6) \
+rd: 01000 (bit positions 7-11) \
+funct3: 111 (bit positions 12-14) \
+rs1: 00001 (bit positions 15-19) \
+rs2: 00011 (bit positions 20-24) \
+funct7: 0000000 (bit positions 25-31) 
+
+Concatenating these binary strings together gives us the 32-bit instruction:
+
+0000000 00011 00001 111 01000 0110011
+
+When you concatenate these fields, you get:
+
+0000000 00011 00001 111 01000 0110011
+
+Converting to Hexadecimal \
+To make it easier to read and use, let's convert this binary instruction to hexadecimal.
+
+Split into 4-bit segments: 0000 0000 0011 0000 0111 1010 0001 1001 \
+Convert each segment to hex:
+0000 -> 0 \
+0000 -> 0 \
+0011 -> 3 \
+0000 -> 0 \
+0111 -> 7 \
+1010 -> A \
+0001 -> 1 \
+1001 -> 9 \
+So, the hexadecimal representation of the 32-bit instruction is:0x00307A19.
 
 
 
