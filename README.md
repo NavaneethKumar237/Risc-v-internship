@@ -85,30 +85,30 @@ This instruction allows add two registers together and save the result in the th
 The ADD instruction is an R-type (Register) instruction, which has the following format:
 ![image](https://github.com/NavaneethKumar237/Risc-v-internship/assets/167600626/c9b0647c-5bed-4931-ab5a-cf73677b748f)
 
-32-bit Instruction Code
-Now, let's put these fields together:
+32-bit Instruction Code  \
+Now, let's put these fields together: \
 
-funct7: 0000000
-rs2: 00001
-rs1: 00010
-funct3: 000
-rd: 00110
-opcode: 0110011
-Putting it all together:
+funct7: 0000000  \
+rs2: 00001     \
+rs1: 00010     \
+funct3: 000    \
+rd: 00110      \
+opcode: 0110011  \
+Putting it all together:  \
 
-31-25	24-20	19-15	14-12	11-7	6-0
-0000000	00001	00010	000	00110	0110011
-In binary: 0000000 00001 00010 000 00110 0110011
+31-25	24-20	19-15	14-12	11-7	6-0    \
+0000000	00001	00010	000	00110	0110011   \
+In binary: 0000000 00001 00010 000 00110 0110011  \
 
-Convert this to hexadecimal for a more compact representation:
+Convert this to hexadecimal for a more compact representation: \
 
-0000000 is 0x00 
-00001 is 0x01
-00010 is 0x02
-000 is 0x00
-00110 is 0x06
-0110011 is 0x33
-Thus, the 32-bit binary instruction can be written as: 0x00200633.
+0000000 is 0x00    \ 
+00001 is 0x01 \
+00010 is 0x02\
+000 is 0x00\
+00110 is 0x06\
+0110011 is 0x33\
+Thus, the 32-bit binary instruction can be written as: 0x00200633
 
 
 
