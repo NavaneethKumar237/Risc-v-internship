@@ -74,11 +74,13 @@ and the output we got 11 number of instructions
 
 ![image](https://github.com/NavaneethKumar237/Risc-v-internship/assets/167600626/255a9251-0bbb-47e2-adb8-4bcc0abfca1b)
 
-The above shown the base instructions formates \
+The above shown the base instructions formates 
 
-Now Lets discuss about in detail 
+Now let's discuss about in detail 
 -
-
+ADD
+-
+This instruction allows add two registers together and save the result in the third one.\ For example: ADD x3, x1, x2. It means add together x1 and x2 and save the result in x3. \As each instruction consists of 32 bits.
 
 
 
