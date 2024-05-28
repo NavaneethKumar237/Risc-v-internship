@@ -66,6 +66,9 @@ and the output we got 11 number of instructions
 ![Screenshot from 2024-05-24 18-38-27](https://github.com/NavaneethKumar237/Risc-v-internship/assets/167600626/1fda23bb-209b-4609-afb1-e8ede9d689db)
 
  we can observe that in the both outputs we got 11 istructions......
+
+ Task 2
+ =
  
 
  
