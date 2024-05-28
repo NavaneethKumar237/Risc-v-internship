@@ -119,7 +119,7 @@ The R-type format in RISC-V is structured as follows:
 ![image](https://github.com/NavaneethKumar237/Risc-v-internship/assets/167600626/309efc6b-f279-4392-bd32-7ed631917c17)
 opcode: The opcode for R-type arithmetic instructions is 0110011. \
 funct7: For the SUB instruction, funct7 is 0100000. \
-funct3: For the SUB instruction, funct3 is 000.    \ 
+funct3: For the SUB instruction, funct3 is 000. \ 
 rd (destination register): r7 corresponds to 00011 in binary.\
 rs1 (source register 1): r1 corresponds to 00001 in binary. \
 rs2 (source register 2): r2 corresponds to 00010 in binary 
@@ -131,8 +131,8 @@ Now, we combine all these fields into the 32-bit instruction format:
 Converting each field to its binary representation:
 
 funct7: 0100000 (7 bits) \
-rs2: 00010 (5 bits)  \ 
-rs1: 00001 (5 bits)  \ 
+rs2: 00010 (5 bits) \ 
+rs1: 00001 (5 bits) \ 
 funct3: 000 (3 bits) \
 rd: 00111 (5 bits)  \
 opcode: 0110011 (7 bits) 
