@@ -460,13 +460,21 @@ ID_EX_NPC[31:0] (Instruction Decode/Execute Next Program Counter):
 -
 This signal holds the next program counter value calculated during the Decode stage and used in the Execute stage for branch and jump instructions.
 
+![Screenshot from 2024-06-01 15-10-51](https://github.com/NavaneethKumar237/Risc-v-internship/assets/167600626/34fa85ea-6fd6-4ec5-bcdb-7af01eb3e658)
+
+
 IF_ID_IR[31:0] (Instruction Fetch/Instruction Decode Instruction Register):
 -
 This signal contains the instruction fetched from memory during the Instruction Fetch stage and passed to the Instruction Decode stage. It's the current instruction being decoded.
 
+![Screenshot from 2024-06-01 11-36-45](https://github.com/NavaneethKumar237/Risc-v-internship/assets/167600626/25df3ee0-1300-423a-8149-8c8a81481bdd)
+
+
 IF_ID_NPC[31:0] (Instruction Fetch/Instruction Decode Next Program Counter):
 -
 This signal holds the next program counter value calculated during the Instruction Fetch stage and passed to the Instruction Decode stage. It points to the address of the next instruction to be executed.
+
+,![Screenshot from 2024-06-01 15-11-19](https://github.com/NavaneethKumar237/Risc-v-internship/assets/167600626/d63e14c4-8c86-4264-9052-61250256874c)
 
   
 
