@@ -477,5 +477,7 @@ This signal holds the next program counter value calculated during the Instructi
 ,![Screenshot from 2024-06-01 15-11-19](https://github.com/NavaneethKumar237/Risc-v-internship/assets/167600626/d63e14c4-8c86-4264-9052-61250256874c)
 
   
+By analyzing these signals in GTKWave, we can observe how instructions progress through each pipeline stage, inspect the values of operands and results of operations, and debug issues like incorrect instruction execution, data hazards, or control hazards. This helps in ensuring that the processor pipeline works as intended and meets design specifications.
+
 
 
