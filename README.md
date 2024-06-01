@@ -360,15 +360,14 @@ Before going to the work let's learn some key words
 
 Now we installed the compilers in our pc now we need to clone the github repo
 
-$ git clone https://github.com/vinayrayapati/rv32i
+$ git clone https://github.com/vinayrayapati/rv32i \
 $ cd rv32i
 
 After cloning the github repo ,now we need to compile the programa and see the output waveforms 
   
 we have to create one iiitb_rv32i.vcd dump file to get the output the command as follows
 
-$ iverilog -o iiitb_rv32i iiitb_rv32i.v iiitb_rv32i_tb.v
-
+$ iverilog -o iiitb_rv32i iiitb_rv32i.v iiitb_rv32i_tb.v \
 $ ./iiitb_rv32i
 
 Now we created the file Lets see the output in the gkt wave vertilog 
