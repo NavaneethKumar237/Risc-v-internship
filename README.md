@@ -340,7 +340,46 @@ LW r13, r1, 2
 SLL r15, r1, r2 
 
 #Task-3
+=
+ Simulation of RISC-V Core Verilog netlist 
+ -
 
+Before going to the work let's learn some key words
 
+* IVERILOG : This is a linux based simulator, Verilog is an implementation of the Verilog hardware description language compiler that generates netlists in the desired format and a simulator
+
+* GTKWAVE : GTKWave is a fully featured GTK+ wave viewer for Unix, Win32, and Mac OSX which reads LXT, LXT2, VZT, FST, and GHW files as well as standard Verilog VCD/EVCD files and allows their viewing
+
+  The above compilers are most important for getting our signal wave forms now we need to install them , we used Icarus Verilog & GTKWave Analyzer V3.3.86 now.
+
+  For istalling we need to use these commands
+
+  $ sudo apt update
+  
+  $ sudo apt install iverilog gtkwave
+
+Now we installed the compilers in our pc now we need to clone the github repo
+
+$ git clone https://github.com/vinayrayapati/rv32i
+$ cd rv32i
+
+After cloning the github repo ,now we need to compile the programa and see the output waveforms 
+  
+we have to create one iiitb_rv32i.vcd dump file to get the output the command as follows
+
+$ iverilog -o iiitb_rv32i iiitb_rv32i.v iiitb_rv32i_tb.v
+
+$ ./iiitb_rv32i
+
+Now we created the file Lets see the output in the gkt wave vertilog 
+
+use this command in the terminal
+
+$ gtkwave iiitb_rv32i.vcd
+
+ Now we get the output in the wave forms 
+
+Below we can see the output wave forms.....
+  
 
 
