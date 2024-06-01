@@ -355,13 +355,20 @@ Before going to the work let's learn some key words
   For istalling we need to use these commands
 
   $ sudo apt update
-  
+
+  ![Screenshot from 2024-06-01 07-47-12](https://github.com/NavaneethKumar237/Risc-v-internship/assets/167600626/714a977e-36f7-4c1c-8b8b-e226cfe290e6)
+
   $ sudo apt install iverilog gtkwave
+
+  ![Screenshot from 2024-06-01 07-51-10](https://github.com/NavaneethKumar237/Risc-v-internship/assets/167600626/f6dfff75-640b-4c84-abe9-3f1a369512ce)
+
 
 Now we installed the compilers in our pc now we need to clone the github repo
 
 $ git clone https://github.com/vinayrayapati/rv32i \
 $ cd rv32i
+
+![Screenshot from 2024-06-01 07-55-01](https://github.com/NavaneethKumar237/Risc-v-internship/assets/167600626/3f67e2b3-625d-4433-a1d1-67f8582d54ed)
 
 After cloning the github repo ,now we need to compile the programa and see the output waveforms 
   
@@ -376,9 +383,38 @@ use this command in the terminal
 
 $ gtkwave iiitb_rv32i.vcd
 
+![Screenshot from 2024-06-01 07-55-01](https://github.com/NavaneethKumar237/Risc-v-internship/assets/167600626/e8f6e4f1-488d-4c87-9686-84ce4af82d3c)
+
+
  Now we get the output in the wave forms 
 
 Below we can see the output wave forms.....
+
+![Screenshot from 2024-06-01 08-11-59](https://github.com/NavaneethKumar237/Risc-v-internship/assets/167600626/26532679-4d42-4522-9593-07fc64faad80)
+
+Pipeline Stages and Signals
+
+
+Instruction Fetch (IF):
+Fetches the instruction from memory.
+Relevant signals: IF_ID_IR[31:0], IF_ID_NPC[31:0].
+
+Instruction Decode (ID):
+Decodes the fetched instruction and reads operands from the register file.
+Relevant signals: ID_EX_A[31:0], ID_EX_B[31:0], ID_EX_IMMEDIATE[31:0], ID_EX_NPC[31:0].
+
+Execute (EX):
+Performs arithmetic or logical operations.
+Relevant signals: EX_MEM_ALUOUT[31:0], EX_MEM_IR[31:0], BR_EN.
+
+Memory Access (MEM):
+Accesses memory for load and store instructions.
+Signals passing to this stage: EX_MEM_ALUOUT[31:0], EX_MEM_IR[31:0].
+
+Write Back (WB):
+Writes the result back to the register file.
+Signals passing from the MEM stage to WB are not shown, but EX_MEM_ALUOUT[31:0] often becomes a part of this stage.
+
   
 
 
