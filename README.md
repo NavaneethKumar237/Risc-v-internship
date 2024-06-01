@@ -1,7 +1,7 @@
 vsd risc-v internship
 -
 
-Task 1 : installing the oracle virutal machine and running basic c program 
+#Task 1 : installing the oracle virutal machine and running basic c program 
 -
 For installing the oracle virutal machine go through the folling website 
 https://www.virtualbox.org/wiki/Downloads
@@ -67,7 +67,7 @@ and the output we got 11 number of instructions
 
  we can observe that in the both outputs we got 11 istructions......
 
- Task 2
+ #Task 2
  =
  Lets get in to Risc-v chip, and learn about different types of RISC-V Instruction types R,I,S,B,U,J.
  -
@@ -339,6 +339,7 @@ LW r13, r1, 2
 
 SLL r15, r1, r2 
 
+#Task-3
 
 
 
