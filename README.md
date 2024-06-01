@@ -395,59 +395,77 @@ Below we can see the output wave forms.....
 Pipeline Stages and Signals
 
 
-Instruction Fetch (IF): \
+Instruction Fetch (IF): 
+-
 Fetches the instruction from memory. \
 Relevant signals: IF_ID_IR[31:0], IF_ID_NPC[31:0].
 
-Instruction Decode (ID): \
+Instruction Decode (ID): 
+-
 Decodes the fetched instruction and reads operands from the register file. \
 Relevant signals: ID_EX_A[31:0], ID_EX_B[31:0], ID_EX_IMMEDIATE[31:0], ID_EX_NPC[31:0].
 
-Execute (EX): \
+Execute (EX): 
+-
 Performs arithmetic or logical operations. \
 Relevant signals: EX_MEM_ALUOUT[31:0], EX_MEM_IR[31:0], BR_EN.
 
-Memory Access (MEM): \
+Memory Access (MEM): 
+-
 Accesses memory for load and store instructions. \
 Signals passing to this stage: EX_MEM_ALUOUT[31:0], EX_MEM_IR[31:0].
 
-Write Back (WB): \
+Write Back (WB): 
+-
 Writes the result back to the register file. \
 Signals passing from the MEM stage to WB are not shown, but EX_MEM_ALUOUT[31:0] often becomes a part of this stage.
 
+-------------------------------------------------------------------------------------------------------------
 
-
-BR_EN (Branch Enable):\
+BR_EN (Branch Enable):
+-
 This signal indicates whether a branch instruction is enabled. It's used to control the flow of execution based on branch conditions.
 
 ![Screenshot from 2024-06-01 08-19-55](https://github.com/NavaneethKumar237/Risc-v-internship/assets/167600626/f7c2617a-3ab1-4032-b250-c706ccde6107)
 
-EX_MEM_ALUOUT[31:0] (Execute/Memory ALU Output):\
+EX_MEM_ALUOUT[31:0] (Execute/Memory ALU Output):
+-
 This signal holds the output from the Arithmetic Logic Unit (ALU) during the Execute stage and is passed to the Memory stage. It represents the result of an arithmetic or logical operation.
 
-EX_MEM_IR[31:0] (Execute/Memory Instruction Register):\
+![Screenshot from 2024-06-01 11-34-04](https://github.com/NavaneethKumar237/Risc-v-internship/assets/167600626/c519e767-1461-482a-8caa-ff840ffd4c74)
+
+EX_MEM_IR[31:0] (Execute/Memory Instruction Register):
+-
 This signal contains the instruction being processed in the Execute stage and passed to the Memory stage. It helps keep track of which instruction is being executed.
 
 ![Screenshot from 2024-06-01 08-21-06](https://github.com/NavaneethKumar237/Risc-v-internship/assets/167600626/33a08f91-6e75-48f7-a568-5976e1d01d21)
 
-ID_EX_A[31:0] (Instruction Decode/Execute Operand A):\
+ID_EX_A[31:0] (Instruction Decode/Execute Operand A):
+-
 This signal holds the value of the first operand (source register A) being used in the Execute stage. It's fetched from the register file during the Instruction Decode stage.
 
-ID_EX_B[31:0] (Instruction Decode/Execute Operand B):\
+ID_EX_B[31:0] (Instruction Decode/Execute Operand B):
+-
 Similar to ID_EX_A[31:0], this signal holds the value of the second operand (source register B) being used in the Execute stage.
 
 ![Screenshot from 2024-06-01 08-21-44](https://github.com/NavaneethKumar237/Risc-v-internship/assets/167600626/5ed5b855-de14-4526-934c-dac0514cf453)
 
-ID_EX_IMMEDIATE[31:0] (Instruction Decode/Execute Immediate):\
+ID_EX_IMMEDIATE[31:0] (Instruction Decode/Execute Immediate):
+-
 This signal contains the immediate value extracted from the instruction during the Decode stage, which is used in the Execute stage for operations requiring an immediate operand.
 
-ID_EX_NPC[31:0] (Instruction Decode/Execute Next Program Counter):\
+![Screenshot from 2024-06-01 11-36-23](https://github.com/NavaneethKumar237/Risc-v-internship/assets/167600626/769e763a-aa4d-46df-b2a4-e8bf78b4c326)
+
+ID_EX_NPC[31:0] (Instruction Decode/Execute Next Program Counter):
+-
 This signal holds the next program counter value calculated during the Decode stage and used in the Execute stage for branch and jump instructions.
 
-IF_ID_IR[31:0] (Instruction Fetch/Instruction Decode Instruction Register):\
+IF_ID_IR[31:0] (Instruction Fetch/Instruction Decode Instruction Register):
+-
 This signal contains the instruction fetched from memory during the Instruction Fetch stage and passed to the Instruction Decode stage. It's the current instruction being decoded.
 
-IF_ID_NPC[31:0] (Instruction Fetch/Instruction Decode Next Program Counter):\
+IF_ID_NPC[31:0] (Instruction Fetch/Instruction Decode Next Program Counter):
+-
 This signal holds the next program counter value calculated during the Instruction Fetch stage and passed to the Instruction Decode stage. It points to the address of the next instruction to be executed.
 
   
