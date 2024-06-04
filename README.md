@@ -481,3 +481,4 @@ By analyzing these signals in GTKWave, we can observe how instructions progress 
 
 
 
+#task 4.md
