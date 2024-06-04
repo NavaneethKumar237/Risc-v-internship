@@ -480,4 +480,6 @@ This signal holds the next program counter value calculated during the Instructi
 By analyzing these signals in GTKWave, we can observe how instructions progress through each pipeline stage, inspect the values of operands and results of operations, and debug issues like incorrect instruction execution, data hazards, or control hazards. This helps in ensuring that the processor pipeline works as intended and meets design specifications.
 
 
+#task 4
+=
 
