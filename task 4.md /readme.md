@@ -1,12 +1,13 @@
 # MAKING A GAME COSOLE USING VSDSQUADRON MINI
 
 
-OVER VIEW
+OVERVIEW
 -
 This is a smiple model of the game console had 5 push buttons and oled disply to show and a power switch 
 we need to connect all the all the components to vsdsquadron mini we have to upload the specific code in to it to get the desired game
+The heart of the game console is a RISC-V based microcontroller based vsd mini board  , providing an open-source, highly efficient, and customizable platform for many applications.
 
-........
+..................................................
 
 LIST OF COMPONENTS
 -
