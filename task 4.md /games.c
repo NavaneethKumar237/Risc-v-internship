@@ -1,32 +1,9 @@
 
 // ===================================================================================
-// Project:   Tiny Invaders - Conversion for CH32V003
+// Project:   Tiny Invaders - Conversion for vsdsquadron mini
 // Version:   v1.0
-// Year:      2023
-// ===================================================================================
-//
-//   >>>>>  T-I-N-Y  I-N-V-A-D-E-R-S v3.1 for ATTINY85  GPLv3 <<<<
-//                   Programmer: Daniel C 2018-2021
-//              Contact EMAIL: electro_l.i.b@tinyjoypad.com
-//                    https://www.tinyjoypad.com
-//         https://sites.google.com/view/arduino-collection
-//
-//  Tiny Invaders v3.1 is free software: you can redistribute it and/or modify
-//  it under the terms of the GNU General Public License as published by
-//  the Free Software Foundation, either version 3 of the License, or
-//  (at your option) any later version.
-//
-//  This program is distributed in the hope that it will be useful,
-//  but WITHOUT ANY WARRANTY; without even the implied warranty of
-//  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-//  GNU General Public License for more details.
-//
-//  You should have received a copy of the GNU General Public License
-//  along with this program.  If not, see <http://www.gnu.org/licenses/>.
-//
-// ===================================================================================
-// Modified to work with CH32V003 by Stefan Wagner: https://github.com/wagiminator
-// ===================================================================================
+// Year:      2024
+   ===================================================================================
 
 #include <driver.h>           // TinyJoypad conversion driver
 #include <spritebank.h>       // grafix
