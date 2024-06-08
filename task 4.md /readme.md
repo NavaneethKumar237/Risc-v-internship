@@ -14,7 +14,8 @@ LIST OF COMPONENTS
 2. 5 push buttons
 3. zero PCB
 4. jumper  wires
-5. OLED display 
+5. OLED display
+6. Resistors of differnt values
 
 HARDWARE CONNECTIONS
 =
