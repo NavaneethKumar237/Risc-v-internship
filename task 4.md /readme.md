@@ -23,8 +23,14 @@ HARDWARE CONNECTIONS
 CIRCUI DIAGRAM
 -
 
+![f575878f-6447-4391-aa24-13d8dac9a91f](https://github.com/NavaneethKumar237/Risc-v-internship/assets/167600626/1f3854c4-914c-476d-86c1-c3d3075f5d26)
+
+
 PINOUT
 -
+ ![image](https://github.com/NavaneethKumar237/Risc-v-internship/assets/167600626/90fd5f59-ad37-4515-8948-5095136b599a)
+
+![image](https://github.com/NavaneethKumar237/Risc-v-internship/assets/167600626/251a0b5a-1739-4686-b5a4-379f28fa29b0)
 
 GAMES
 =
