@@ -17,7 +17,8 @@ Now we are starting compiling with simple c program
 
 Type the following commands
 
-```$ cd 
+```
+$ cd 
 $ gedit sum1ton.c
 ```
 we will get an interface page to write c program
@@ -356,44 +357,46 @@ SLL r15, r1, r2
  -
 
 Before going to the work let's learn some key words
+```
 
 * IVERILOG : This is a linux based simulator, Verilog is an implementation of the Verilog hardware description language compiler that generates netlists in the desired format and a simulator
 
 * GTKWAVE : GTKWave is a fully featured GTK+ wave viewer for Unix, Win32, and Mac OSX which reads LXT, LXT2, VZT, FST, and GHW files as well as standard Verilog VCD/EVCD files and allows their viewing
-
+```
   The above compilers are most important for getting our signal wave forms now we need to install them , we used Icarus Verilog & GTKWave Analyzer V3.3.86 now.
 
   For istalling we need to use these commands
-
+```
   $ sudo apt update
-
+```
   ![Screenshot from 2024-06-01 07-47-12](https://github.com/NavaneethKumar237/Risc-v-internship/assets/167600626/714a977e-36f7-4c1c-8b8b-e226cfe290e6)
 
+```
   $ sudo apt install iverilog gtkwave
-
+```
   ![Screenshot from 2024-06-01 07-51-10](https://github.com/NavaneethKumar237/Risc-v-internship/assets/167600626/f6dfff75-640b-4c84-abe9-3f1a369512ce)
 
 
 Now we installed the compilers in our pc now we need to clone the github repo
-
-$ git clone https://github.com/vinayrayapati/rv32i \
+```
+$ git clone https://github.com/vinayrayapati/rv32i 
 $ cd rv32i
-
+```
 ![Screenshot from 2024-06-01 07-55-01](https://github.com/NavaneethKumar237/Risc-v-internship/assets/167600626/3f67e2b3-625d-4433-a1d1-67f8582d54ed)
 
 After cloning the github repo ,now we need to compile the programa and see the output waveforms 
   
 we have to create one iiitb_rv32i.vcd dump file to get the output the command as follows
-
-$ iverilog -o iiitb_rv32i iiitb_rv32i.v iiitb_rv32i_tb.v \
+```
+$ iverilog -o iiitb_rv32i iiitb_rv32i.v iiitb_rv32i_tb.v 
 $ ./iiitb_rv32i
-
+```
 Now we created the file Lets see the output in the gkt wave vertilog 
 
 use this command in the terminal
-
+```
 $ gtkwave iiitb_rv32i.vcd
-
+```
 ![Screenshot from 2024-06-01 07-55-01](https://github.com/NavaneethKumar237/Risc-v-internship/assets/167600626/e8f6e4f1-488d-4c87-9686-84ce4af82d3c)
 
 
@@ -404,6 +407,7 @@ Below we can see the output wave forms.....
 ![Screenshot from 2024-06-01 08-11-59](https://github.com/NavaneethKumar237/Risc-v-internship/assets/167600626/26532679-4d42-4522-9593-07fc64faad80)
 
 Pipeline Stages and Signals
+=
 
 
 Instruction Fetch (IF): 
@@ -526,7 +530,7 @@ HARDWARE CONNECTIONS
 =
 ---------------------------------------------------------
 
-CIRCUI DIAGRAM
+CIRCUIT DIAGRAM
 -
 
 ![f575878f-6447-4391-aa24-13d8dac9a91f](https://github.com/NavaneethKumar237/Risc-v-internship/assets/167600626/1f3854c4-914c-476d-86c1-c3d3075f5d26)
@@ -550,11 +554,13 @@ python3 -m pip install pyus
 ```
 
  Open a terminal and navigate to the folder with the makefile. Run the following command to compile and upload:
- ```make flash
+ ```
+make flash
  ```
 If you want to just upload the pre-compiled binary, run the following command instead:
 
-```python3 .tools/rvprog.py -f <firmware>.bin
+```
+python3 .tools/rvprog.py -f <firmware>.bin
 ```
 
 Working code
@@ -1205,7 +1211,7 @@ void VarResetNewLevel(SPACE *space) {
 
 GAMES
 =
-There are many games but i got stucked with the tiny invaders that was my childhood favourate game 
+There are many games but i got stucked with the tiny invaders that was my childhood favourite game 
 -
 
 Tiny Invaders
@@ -1277,8 +1283,7 @@ https://github.com/NavaneethKumar237/Risc-v-internship/assets/167600626/8b3b07a9
 # Acknowledgement
 
 
-I am B. Navaneeth Kumar, and I am deeply thankful to my mentor, Kunal Ghosh, for his marvelous training in RISC-V and VLSI using VSDsquadron mini. I am grateful for the great opportunity to work with him and am always ready to collaborate with Mr. Kunal Ghosh, the founder & CEO of VLSI System Design.
-
+I am B. Navaneeth Kumar an undergraduate student pursuing B.tech in Electrical And Electronics Egineering, I am deeply thankful to my mentor, Kunal Ghosh, for providing his marvelous training in RISC-V and VLSI using VSDsquadron mini. I am grateful for the great opportunity to work with him .
 
 
 
