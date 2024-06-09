@@ -484,6 +484,13 @@ By analyzing these signals in GTKWave, we can observe how instructions progress 
 =
 # MAKING A GAME COSOLE USING VSDSQUADRON MINI
 
+![f575878f-6447-4391-aa24-13d8dac9a91f](https://github.com/NavaneethKumar237/Risc-v-internship/assets/167600626/1f3854c4-914c-476d-86c1-c3d3075f5d26)
+
+INTRODUCTION
+-
+
+
+A game console is a device used to connect to a display for playing games. I have developed a game console using the VSDSquadron Mini. We used an OLED display to view the games, making it possible to play games directly on this compact and efficient setup. This application showcases the capabilities of the VSDSquadron Mini.
 
 OVERVIEW
 -
@@ -516,6 +523,11 @@ PINOUT
  ![image](https://github.com/NavaneethKumar237/Risc-v-internship/assets/167600626/90fd5f59-ad37-4515-8948-5095136b599a)
 
 ![image](https://github.com/NavaneethKumar237/Risc-v-internship/assets/167600626/251a0b5a-1739-4686-b5a4-379f28fa29b0)
+
+
+SOFTWARE REQUIREMENTS
+=
+I have used the linux to upload the code we need to install the required tools related to the risc-v and ch3v003
 
 GAMES
 =
