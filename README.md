@@ -481,6 +481,7 @@ This signal holds the next program counter value calculated during the Instructi
   
 By analyzing these signals in GTKWave, we can observe how instructions progress through each pipeline stage, inspect the values of operands and results of operations, and debug issues like incorrect instruction execution, data hazards, or control hazards. This helps in ensuring that the processor pipeline works as intended and meets design specifications.
 
+===================================================================
 ## Final_project
 
 #task 4
@@ -541,7 +542,7 @@ python3 -m pip install pyus
 
  Open a terminal and navigate to the folder with the makefile. Run the following command to compile and upload:
  ```make flash
-```
+ ```
 If you want to just upload the pre-compiled binary, run the following command instead:
 
 ```python3 .tools/rvprog.py -f <firmware>.bin
