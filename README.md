@@ -1,6 +1,6 @@
-VSD risc-v internship / MAKING A GAME CONSOLE USING VSDSQUADRON MINI 
+VSD RISC-V INTERNSHIP  / MAKING A GAME CONSOLE USING VSDSQUADRON MINI 
 -
-
+-----------------------------------------
 
 
 ## Task-1 : Installing the Oracle Virutal Machine and running Basic C Program 
