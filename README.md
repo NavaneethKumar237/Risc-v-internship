@@ -1,4 +1,4 @@
-vsd risc-v internship
+VSD risc-v internship / MAKING A GAME CONSOLE USING VSDSQUADRON MINI 
 -
 
 
@@ -36,7 +36,8 @@ we can see the output sum of 6 numbers is 21
 
 compiling same program with risc-v compiler
 -
-```$ cat 1ton.c 
+```
+$ cat 1ton.c 
 ```
 that display the total program in the terminal 
 
