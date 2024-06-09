@@ -5,7 +5,7 @@ VSD RISC-V INTERNSHIP  / MAKING A GAME CONSOLE USING VSDSQUADRON MINI
 
 ## Task-1 : Installing the Oracle Virutal Machine and running Basic C Program 
 -
-For installing the oracle virutal machine go through the folling website 
+ For installing the oracle virutal machine go through the folling website 
 https://www.virtualbox.org/wiki/Downloads
 
 install the virtual machie
