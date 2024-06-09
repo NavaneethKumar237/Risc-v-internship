@@ -502,8 +502,7 @@ This is a smiple model of the game console had 5 push buttons and oled disply to
 we need to connect all the all the components to vsdsquadron mini we have to upload the specific code in to it to get the desired game
 The heart of the game console is a RISC-V based microcontroller based vsd mini board  , providing an open-source, highly efficient, and customizable platform for many applications.
 
-..................................................
-
+------------------------------------------------------------
 LIST OF COMPONENTS
 -
 1. VSDsquadron mini 
@@ -531,10 +530,20 @@ PINOUT
 
 SOFTWARE REQUIREMENTS
 =
-I have used the linux to upload the code we need to install the required tools related to the risc-v and ch3v003
+I have used the linux to upload the code we need to install the required tools related to the risc-v 
+next you need to Install the toolchain (GCC compiler, Python3, and PyUSB):
+
+```sudo apt install build-essential libnewlib-dev gcc-riscv64-unknown-elf
+sudo apt install python3 python3-pip
+python3 -m pip install pyusb```
+
 
 Working code
 -
+
+
+
+
 
 ```
 
