@@ -1,8 +1,10 @@
 vsd risc-v internship
 -
+
+[Task-1](Task-1)
 [Final_project](#Final_project)
 
-#Task 1 : installing the oracle virutal machine and running basic c program 
+## Task-1 : installing the oracle virutal machine and running basic c program 
 -
 For installing the oracle virutal machine go through the folling website 
 https://www.virtualbox.org/wiki/Downloads
