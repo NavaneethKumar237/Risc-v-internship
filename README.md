@@ -519,6 +519,8 @@ PINOUT
 
 GAMES
 =
+There are many games but i got stucked with the tiny invaders that was my childhood favourate game 
+-
 
 Tiny Invaders
 -
@@ -574,6 +576,15 @@ OUTPUT VIDEO
 =
 
 
+
+
+https://github.com/NavaneethKumar237/Risc-v-internship/assets/167600626/2f5b777e-b68f-4eff-8fa0-3c57443e0724
+
+
+# Acknowledgement
+=
+
+I am B. Navaneeth Kumar, and I am deeply thankful to my mentor, Kunal Ghosh, for his marvelous training in RISC-V and VLSI using VSDsquadron mini. I am grateful for the great opportunity to work with him and am always ready to collaborate with Mr. Kunal Ghosh, the founder & CEO of VLSI System Design.
 
 
 
