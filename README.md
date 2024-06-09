@@ -3,30 +3,32 @@ vsd risc-v internship
 
 
 
-## Task-1 : installing the oracle virutal machine and running basic c program 
+## Task-1 : Installing the Oracle Virutal Machine and running Basic C Program 
 -
 For installing the oracle virutal machine go through the folling website 
 https://www.virtualbox.org/wiki/Downloads
 
 install the virtual machie
 
- we are creating the virtual hard disk by including the VDI  file
+ We are creating the Virtual Hard Disk by including the VDI  file
  -
  
 Now we are starting compiling with simple c program
 
 Type the following commands
 
-$ cd \
+```$ cd 
 $ gedit sum1ton.c
-
+```
 we will get an interface page to write c program
 
 ![Screenshot from 2024-05-24 14-59-13](https://github.com/NavaneethKumar237/Risc-v-internship/assets/167600626/a7189e2e-6635-4e5e-8bab-f8978ce23981)
 
-save the program and compile it \
-$ gcc sum1ton.c                    (compiles the program) \
-$ ./a.out                          (gives output)
+save the program and compile it 
+```
+$ gcc sum1ton.c                   
+$ ./a.out                          
+```
 
 ![Screenshot from 2024-05-24 14-58-55](https://github.com/NavaneethKumar237/Risc-v-internship/assets/167600626/f756d24b-6a40-488d-8a84-1352dc12e98f)
 
@@ -34,21 +36,25 @@ we can see the output sum of 6 numbers is 21
 
 compiling same program with risc-v compiler
 -
-$ cat 1ton.c \
+```$ cat 1ton.c 
+```
 that display the total program in the terminal 
 
 ![Screenshot from 2024-05-24 16-00-04](https://github.com/NavaneethKumar237/Risc-v-internship/assets/167600626/e5f929ee-ba97-477f-a1a2-d1472797f3ec)
 
 
-next converting in to .o file \
-$ riscv64-unknown-elf-gcc -O1 -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c \
-$ ls -ltr sum1ton.o    (file is created)
-
+next converting in to .o file 
+```
+$ riscv64-unknown-elf-gcc -O1 -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c 
+$ ls -ltr sum1ton.o    
+```
 ![Screenshot from 2024-05-24 14-55-13](https://github.com/NavaneethKumar237/Risc-v-internship/assets/167600626/fb1494b4-57b8-4da9-89a7-3a415c79ad64)
 
 Opening the another tab of terminal to get list of instructions \
 and type the command \
-$ risc-v64-unknown-elf-objdump -d sum1ton.o \
+```
+$ risc-v64-unknown-elf-objdump -d sum1ton.o 
+```
 we will get the set of instructions
 ![Screenshot from 2024-05-24 14-55-20](https://github.com/NavaneethKumar237/Risc-v-internship/assets/167600626/acbfca4e-4c2b-45b2-88ae-14b8aa464687)
 
@@ -59,7 +65,9 @@ we will get the set of instructions
 
 
 now compling with another command \
+```
 $ riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c \
+```
 here is how it done
 ![Screenshot from 2024-05-24 18-38-14](https://github.com/NavaneethKumar237/Risc-v-internship/assets/167600626/604e1603-6ccc-47ef-9531-27ad12bb17c0)
 
@@ -481,7 +489,7 @@ This signal holds the next program counter value calculated during the Instructi
   
 By analyzing these signals in GTKWave, we can observe how instructions progress through each pipeline stage, inspect the values of operands and results of operations, and debug issues like incorrect instruction execution, data hazards, or control hazards. This helps in ensuring that the processor pipeline works as intended and meets design specifications.
 
-===================================================================
+---------------------------------------------------------------
 ## Final_project
 
 #task 4
@@ -1253,13 +1261,20 @@ OUTPUT VIDEO
 =
 
 
-
-
 https://github.com/NavaneethKumar237/Risc-v-internship/assets/167600626/2f5b777e-b68f-4eff-8fa0-3c57443e0724
+
+
+https://github.com/NavaneethKumar237/Risc-v-internship/assets/167600626/8b3b07a9-b928-444d-8940-2c808f9fe0eb
+
+
+
+
+
+
 
 ----------------------------------------------------------
 # Acknowledgement
-=
+
 
 I am B. Navaneeth Kumar, and I am deeply thankful to my mentor, Kunal Ghosh, for his marvelous training in RISC-V and VLSI using VSDsquadron mini. I am grateful for the great opportunity to work with him and am always ready to collaborate with Mr. Kunal Ghosh, the founder & CEO of VLSI System Design.
 
