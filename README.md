@@ -514,6 +514,7 @@ LIST OF COMPONENTS
 
 HARDWARE CONNECTIONS
 =
+---------------------------------------------------------
 
 CIRCUI DIAGRAM
 -
@@ -535,8 +536,16 @@ next you need to Install the toolchain (GCC compiler, Python3, and PyUSB):
 
 ```sudo apt install build-essential libnewlib-dev gcc-riscv64-unknown-elf
 sudo apt install python3 python3-pip
-python3 -m pip install pyusb```
+python3 -m pip install pyus
+```
 
+ Open a terminal and navigate to the folder with the makefile. Run the following command to compile and upload:
+ ```make flash
+```
+If you want to just upload the pre-compiled binary, run the following command instead:
+
+```python3 .tools/rvprog.py -f <firmware>.bin
+```
 
 Working code
 -
@@ -1237,7 +1246,7 @@ Tiny Pacman
 
 ![WhatsApp Image 2024-06-08 at 8 35 30 AM](https://github.com/NavaneethKumar237/Risc-v-internship/assets/167600626/c98669b0-b33d-46a9-952d-9fad5877b09f)
 
-
+--------------------------------------------------------------
 
 OUTPUT VIDEO
 =
@@ -1247,7 +1256,7 @@ OUTPUT VIDEO
 
 https://github.com/NavaneethKumar237/Risc-v-internship/assets/167600626/2f5b777e-b68f-4eff-8fa0-3c57443e0724
 
-
+----------------------------------------------------------
 # Acknowledgement
 =
 
